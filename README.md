@@ -29,7 +29,10 @@
 composer require ae3/survey
 ```
 
-3) Para executar a migração das tabelas, execute o comando: ```form:install```
+3) Para executar a migração das tabelas, execute o comando: 
+```json
+php artisan form:install
+```
 <br>
 O comando irá executar o comando ```php artisan:migrate```
 
