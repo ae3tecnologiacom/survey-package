@@ -17,6 +17,7 @@ return [
             'group_conditions' => 'group_conditions',
             'survey_items' => 'survey_items',
             'survey_logs' => 'survey_logs',
-        ]
+        ],
+        'order_column' => env('ORDER_COLUMN', 'order_num')
     ],
 ];
