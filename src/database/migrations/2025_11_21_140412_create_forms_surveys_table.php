@@ -13,8 +13,8 @@ return new class extends Migration {
             $table->timestamp('finished_at');
             $table->foreignId('questionnaire_id')->constrained('forms.questionnaires');
             $table->foreignId('status_id')->constrained('forms.statuses');
-            $table->string('answerable_type');
-            $table->unsignedBigInteger('answerable_id');
+            $table->string('answerable_type')->nullable()->default(null);
+            $table->unsignedBigInteger('answerable_id')->nullable()->default(null);
             $table->timestamps();
         });
     }
